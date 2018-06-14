@@ -25,7 +25,7 @@ var initCmd = &cobra.Command{
 	Use:   "init [FILENAME]",
 	Short: "Initialize data store",
 	Long: `Initializes a bolt db datastore that holds the repositories, 
-	tags and layer information that is obtained from a registry
+tags and layer information that is obtained from a registry
 `,
 	Args: cobra.ExactArgs(1),
 	Run: func(cmd *cobra.Command, args []string) {
