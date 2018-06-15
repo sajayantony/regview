@@ -15,7 +15,7 @@
 package cmd
 
 import (
-	"github.com/sajayantony/rv/pkg"
+	"github.com/sajayantony/rv/store"
 
 	"github.com/spf13/cobra"
 )
@@ -29,7 +29,7 @@ tags and layer information that is obtained from a registry
 `,
 	Args: cobra.ExactArgs(1),
 	Run: func(cmd *cobra.Command, args []string) {
-		initdb.Initialize(args[0])
+		store.Initialize(args[0])
 	},
 }
 
